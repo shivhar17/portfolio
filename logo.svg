@@ -1,0 +1,35 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="innerGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="200" fill="#0b0c10"/>
+  
+  <!-- Outer Circle Border with Glow -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#66fcf1" stroke-width="3" filter="url(#glow)" opacity="0.9"/>
+  
+  <!-- Inner Circle Border -->
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#66fcf1" stroke-width="1.5" opacity="0.4" filter="url(#innerGlow)"/>
+  
+  <!-- S.D Text with Strong Glow -->
+  <text x="100" y="105" font-family="Outfit, sans-serif" font-size="90" font-weight="800" fill="#66fcf1" text-anchor="middle" dominant-baseline="central" letter-spacing="2" filter="url(#glow)">S D</text>
+  
+  <!-- Decorative dots below -->
+  <circle cx="80" cy="140" r="3.5" fill="#66fcf1" opacity="0.8" filter="url(#glow)"/>
+  <circle cx="100" cy="146" r="4" fill="#66fcf1" opacity="0.9" filter="url(#glow)"/>
+  <circle cx="120" cy="140" r="3.5" fill="#66fcf1" opacity="0.8" filter="url(#glow)"/>
+</svg>

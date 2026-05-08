@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivhar Dahiphale - Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #222;
+        }
+
+        .a4-paper {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm;
+            margin: 10mm auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 24pt;
+            margin: 0 0 5px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #111;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 15px;
+            font-size: 10pt;
+            color: #555;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-info a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        h2 {
+            font-size: 13pt;
+            text-transform: uppercase;
+            border-bottom: 1.5px solid #222;
+            padding-bottom: 3px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .section-content {
+            font-size: 10.5pt;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 4px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+        
+        .item-sub {
+            font-style: italic;
+            color: #444;
+            margin-bottom: 4px;
+            font-size: 10pt;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            row-gap: 5px;
+        }
+
+        .skill-category {
+            font-weight: 600;
+        }
+
+        /* Print Specifics */
+        @media print {
+            body {
+                background: none;
+            }
+            .a4-paper {
+                margin: 0;
+                box-shadow: none;
+                width: 100%;
+                min-height: auto;
+                padding: 10mm;
+            }
+            .contact-info a {
+                color: #222;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="a4-paper">
+        <!-- Header -->
+        <h1>Shivhar Dahiphale</h1>
+        <div class="contact-info">
+            <span>vivekdhamale63@gmail.com</span> |
+            <span><a href="https://www.linkedin.com/in/vivek-dhamale-9930463a1">linkedin.com/in/vivek-dhamale-9930463a1</a></span> |
+            <span><a href="https://github.com/kevivek-cyber">github.com/kevivek-cyber</a></span> |
+            <span>Pune, Maharashtra</span>
+        </div>
+
+        <!-- Summary -->
+        <h2>Professional Summary</h2>
+        <div class="section-content">
+            A passionate First-Year B.Tech student deeply interested in modern web development, software engineering, and algorithmic problem-solving. Demonstrated proficiency in building production-ready full-stack applications (MERN Stack) and successfully delivering paid freelance web solutions for real-world clients. Highly active in competitive programming and continuous learning.
+        </div>
+
+        <!-- Education -->
+        <h2>Education</h2>
+        <div class="section-content">
+            <div class="item-header">
+                <span>MIT Academy of Engineering (MITAOE), Alandi</span>
+                <span>Present</span>
+            </div>
+            <div class="item-sub">B.Tech (First Year)</div>
+            <ul>
+                <li><strong>Entrance Exams:</strong> MHT-CET: 94.31%ile | JEE Main: 85%ile</li>
+            </ul>
+            
+            <div style="margin-top: 10px;">
+                <strong>12th Standard (HSC Board)</strong> &mdash; 70% <br>
+                <strong>10th Standard (CBSE Board)</strong> &mdash; 92.8%
+            </div>
+        </div>
+
+        <!-- Professional Experience -->
+        <h2>Professional Experience</h2>
+        <div class="section-content">
+            <div class="item-header">
+                <span>Freelance Web Developer</span>
+                <span>PrepTeen.com</span>
+            </div>
+            <ul>
+                <li>Successfully delivered a paid, professional freelance web development project.</li>
+                <li>Developed and deployed high-quality web solutions tailored to the client's real-world business requirements.</li>
+            </ul>
+        </div>
+
+        <!-- Skills -->
+        <h2>Technical Skills</h2>
+        <div class="section-content skills-grid">
+            <div class="skill-category">Languages:</div>
+            <div>C, C++, Java, Python, JavaScript, Kotlin</div>
+            
+            <div class="skill-category">Web Tech:</div>
+            <div>HTML5, CSS3, React, Node.js, Express.js (MERN Stack)</div>
+            
+            <div class="skill-category">Databases:</div>
+            <div>MongoDB</div>
+            
+            <div class="skill-category">Tools:</div>
+            <div>Git, GitHub, VS Code, Figma</div>
+        </div>
+
+        <!-- Projects -->
+        <h2>Projects</h2>
+        <div class="section-content">
+            <div class="item-header">
+                <span>CleanifyWeb (cleanifyweb.in)</span>
+                <span>MERN Stack</span>
+            </div>
+            <ul>
+                <li>Built and deployed a production-ready, full-stack website entirely from scratch.</li>
+                <li>Managed backend infrastructure and collaborative frontend architecture utilizing MongoDB, Express, React, and Node.js.</li>
+            </ul>
+
+            <div class="item-header" style="margin-top: 10px;">
+                <span>Family Heritage Portal</span>
+                <span>HTML, CSS</span>
+            </div>
+            <ul>
+                <li>Designed a comprehensive, interactive web portal documenting extensive family history and cultural events.</li>
+                <li>Created a complex, hierarchical family tree visualization showcasing the 96K Maratha Dhamale heritage.</li>
+            </ul>
+        </div>
+
+        <!-- Achievements -->
+        <h2>Achievements & Competitive Programming</h2>
+        <div class="section-content">
+            <ul>
+                <li><strong>Competitive Programming:</strong> Highly active in solving complex algorithmic challenges on LeetCode, Codeforces, and the CSES Problem Set.</li>
+                <li><strong>LeetCode Hackathons:</strong> Consistently demonstrated strong algorithmic problem-solving skills under time pressure by competing in numerous official LeetCode Hackathons.</li>
+                <li><strong>MITAOE Datathons:</strong> Competed in challenging Datathons organized at MIT Academy of Engineering, focusing on data manipulation and analysis.</li>
+            </ul>
+        </div>
+
+        <!-- Certifications -->
+        <h2>Certifications</h2>
+        <div class="section-content">
+            <ul>
+                <li>Red Hat Certification</li>
+                <li>IBM Certifications: IBM AI Foundations, IBM Enterprise Design Thinking</li>
+                <li>Anthropic Claude</li>
+                <li>AI Fluency Series: Framework & Foundations, Students, Nonprofits</li>
+                <li>Java Completion Certificate</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
